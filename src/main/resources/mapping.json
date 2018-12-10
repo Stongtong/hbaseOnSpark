@@ -1,0 +1,36 @@
+{
+  "tables": [
+    {
+      "table": "data",
+      "topics": [
+        "HBaseInsert"
+      ],
+      "rows": [
+        {
+          "row": "fusionNum+~+dynamicUTC+~+lon+~+lat",
+          "column.family": [
+            {
+              "family": "main",
+              "columns": [
+                "fusionNum",
+                "dynamicUTC",
+                "lon",
+                "lat"
+              ]
+            },
+            {
+              "family": "others",
+              "columns": [
+                "course",
+                "speed",
+                "cSpeed",
+                "imo",
+                "cargoType"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

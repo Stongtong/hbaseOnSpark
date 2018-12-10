@@ -1,0 +1,20 @@
+{
+  "hbase": {
+    "hbase.zookeeper.quorum": "hb1,hb2,hb3,hd4,hd5,hd6,hd7,hd8,hd9,hd10,hd11",
+    "hbase.zookeeper.property.clientPort": 2181,
+    "mapreduce.output.fileoutputformat.outputdir": "/tmp"
+  },
+  "kafka": {
+    "bootstrap.servers": "hb2:9092,hb3:9092,hd4:9092,hd5:9092,hd6:9092",
+    "key.deserializer": "org.apache.kafka.common.serialization.IntegerDeserializer",
+    "value.deserializer": "org.apache.kafka.common.serialization.ByteArrayDeserializer",
+    "group.id": "insert-01",
+    "auto.offset.reset": "latest",
+    "enable.auto.commit": false
+  },
+  "spark": {
+    "app.name": "test",
+    "app.master": "local",
+    "spark.streaming.batchDuration": 10
+  }
+}
